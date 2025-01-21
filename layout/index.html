@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        display: flex;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .row {
+        display: flex;
+        height: 20vh;
+      }
+      .column {
+        display: flex;
+        flex: 1;
+        /* text-align: center; */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+      }
+      .column-1 {
+        background-color: green;
+        /* flex: 1; */
+      }
+      .column-2 {
+        background-color: orange;
+        /* flex: 1; */
+      }
+
+      .row-2 {
+        display: flex;
+        justify-content: center;
+        height: 20vh;
+      }
+
+      .column-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        flex: 3;
+        background-color: purple;
+      }
+
+      .column-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        flex: 7;
+        background-color: pink;
+      }
+
+      .sidebar {
+        width: 250px;
+        background-color: brown;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .sidebar h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .sidebar a {
+        color: white;
+        text-decoration: none;
+        margin: 10px 0;
+        padding: 10px;
+        display: block;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .sidebar a:hover {
+        background-color: #2c3e50; /* Slightly darker */
+      }
+
+      .main-content {
+        flex: 1; /* Fills the remaining space */
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>sidebar</h2>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="main-content">
+      <div class="row">
+        <div class="column column-1">column 1</div>
+
+        <div class="column column-2">column 2</div>
+      </div>
+
+      <div class="row-2">
+        <div class="column-3">column 3</div>
+
+        <div class="column-4">column 4</div>
+      </div>
+    </div>
+  </body>
+</html>
